@@ -30,3 +30,8 @@ cp myBook.pdf books/
 docker exec -ti calibre /bin/bash
 ebook-convert myBook.pdf myBook.epub
 ```
+
+6. Setup account password.
+```
+echo -n 12345 | openssl md5
+```

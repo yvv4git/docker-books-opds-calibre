@@ -9,12 +9,11 @@ services:
       - PGID=1000
       - TZ=Europe/London
       - GUAC_USER=yvv #optional
-      - GUAC_PASS=2b542679dea6567d2c21c360345d2351 #optional
+      - GUAC_PASS=827ccb0eea8a706c4c34a16891f84e7b #optional
       - UMASK_SET=022 #optional
       - CLI_ARGS= #optional
     volumes:
       - ./books:/config
     ports:
       - 8080:8080
-      - 8081:8081
     restart: unless-stopped
